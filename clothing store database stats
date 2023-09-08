@@ -1,0 +1,10 @@
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY,clothing TEXT,sold_items INTEGER,price INTEGER);
+INSERT INTO clothing_store VALUES ( 1, "jeans",20,60);
+INSERT INTO clothing_store VALUES (2,"shirts",25,25);
+INSERT INTO clothing_store VALUES (3,"pants",15,40);
+INSERT INTO clothing_store VALUES (4,"sports shoes",17,100);
+INSERT INTO clothing_store VALUES(5,"hats",33,20);
+SELECT * FROM clothing_store;
+SELECT SUM(sold_items) FROM clothing_store; SELECT SUM(price) FROM clothing_store;
+--display data base ordered by price 
+SELECT * FROM clothing_store ORDER BY price desc;
